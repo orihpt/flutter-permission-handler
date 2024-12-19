@@ -246,13 +246,6 @@ class Permission {
   /// Android Marshmallow+ (API 23+)
   static const requestInstallPackages = Permission._(24);
 
-  /// Permission for accessing the device's tracking state (iOS only).
-  ///
-  /// Allows user to accept that your app collects data about end users and
-  /// shares it with other companies for purposes of tracking across apps and
-  /// websites.
-  static const appTrackingTransparency = Permission._(25);
-
   /// Permission for sending critical alerts (iOS only).
   ///
   /// Allow for sending notifications that override the ringer.
@@ -354,7 +347,6 @@ class Permission {
     manageExternalStorage,
     systemAlertWindow,
     requestInstallPackages,
-    appTrackingTransparency,
     criticalAlerts,
     accessNotificationPolicy,
     bluetoothScan,
@@ -397,7 +389,6 @@ class Permission {
     'manageExternalStorage',
     'systemAlertWindow',
     'requestInstallPackages',
-    'appTrackingTransparency',
     'criticalAlerts',
     'accessNotificationPolicy',
     'bluetoothScan',

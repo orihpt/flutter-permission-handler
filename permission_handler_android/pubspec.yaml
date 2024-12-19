@@ -18,7 +18,11 @@ flutter:
 dependencies:
   flutter:
     sdk: flutter
-  permission_handler_platform_interface: ^4.2.0
+  permission_handler_platform_interface:
+    git:
+      url: https://github.com/orihpt/flutter-permission-handler.git
+      ref: main
+      path: permission_handler_platform_interface/
 
 dev_dependencies:
   flutter_lints: ^1.0.4

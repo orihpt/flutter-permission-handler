@@ -11,9 +11,7 @@ void main() {
 }
 
 ///Defines the main theme color
-final MaterialColor themeMaterialColor =
-    BaseflowPluginExample.createMaterialColor(
-        const Color.fromRGBO(48, 49, 60, 1));
+final MaterialColor themeMaterialColor = BaseflowPluginExample.createMaterialColor(const Color.fromRGBO(48, 49, 60, 1));
 
 /// A Flutter application demonstrating the functionality of this plugin
 class PermissionHandlerWidget extends StatefulWidget {
@@ -24,13 +22,11 @@ class PermissionHandlerWidget extends StatefulWidget {
 
   /// Create a page containing the functionality of this plugin
   static ExamplePage createPage() {
-    return ExamplePage(
-        Icons.location_on, (context) => const PermissionHandlerWidget());
+    return ExamplePage(Icons.location_on, (context) => const PermissionHandlerWidget());
   }
 
   @override
-  _PermissionHandlerWidgetState createState() =>
-      _PermissionHandlerWidgetState();
+  _PermissionHandlerWidgetState createState() => _PermissionHandlerWidgetState();
 }
 
 class _PermissionHandlerWidgetState extends State<PermissionHandlerWidget> {
@@ -45,7 +41,6 @@ class _PermissionHandlerWidgetState extends State<PermissionHandlerWidget> {
                     permission != Permission.photosAddOnly &&
                     permission != Permission.reminders &&
                     permission != Permission.bluetooth &&
-                    permission != Permission.appTrackingTransparency &&
                     permission != Permission.criticalAlerts &&
                     permission != Permission.assistant &&
                     permission != Permission.backgroundRefresh;
@@ -73,8 +68,7 @@ class PermissionWidget extends StatefulWidget {
 class _PermissionState extends State<PermissionWidget> {
   _PermissionState();
 
-  final PermissionHandlerPlatform _permissionHandler =
-      PermissionHandlerPlatform.instance;
+  final PermissionHandlerPlatform _permissionHandler = PermissionHandlerPlatform.instance;
   PermissionStatus _permissionStatus = PermissionStatus.denied;
 
   @override
@@ -85,8 +79,7 @@ class _PermissionState extends State<PermissionWidget> {
   }
 
   void _listenForPermissionStatus() async {
-    final status =
-        await _permissionHandler.checkPermissionStatus(widget._permission);
+    final status = await _permissionHandler.checkPermissionStatus(widget._permission);
     setState(() => _permissionStatus = status);
   }
 
@@ -121,8 +114,7 @@ class _PermissionState extends State<PermissionWidget> {
                 color: Colors.white,
               ),
               onPressed: () {
-                checkServiceStatus(
-                    context, widget._permission as PermissionWithService);
+                checkServiceStatus(context, widget._permission as PermissionWithService);
               })
           : null,
       onTap: () {
@@ -131,11 +123,9 @@ class _PermissionState extends State<PermissionWidget> {
     );
   }
 
-  void checkServiceStatus(
-      BuildContext context, PermissionWithService permission) async {
+  void checkServiceStatus(BuildContext context, PermissionWithService permission) async {
     ScaffoldMessenger.of(context).showSnackBar(SnackBar(
-      content: Text(
-          (await _permissionHandler.checkServiceStatus(permission)).toString()),
+      content: Text((await _permissionHandler.checkServiceStatus(permission)).toString()),
     ));
   }
 

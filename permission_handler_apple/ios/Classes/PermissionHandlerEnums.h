@@ -95,13 +95,6 @@
     #define PERMISSION_BLUETOOTH 0
 #endif
 
-// ios: PermissionGroupAppTrackingTransparency
-// Info.plist: [NSUserTrackingUsageDescription]
-// dart: PermissionGroup.appTrackingTransparency
-#ifndef PERMISSION_APP_TRACKING_TRANSPARENCY
-    #define PERMISSION_APP_TRACKING_TRANSPARENCY 0
-#endif
-
 // ios: PermissionGroupCriticalAlerts
 // Info.plist: UNAuthorizationOptionCriticalAlert
 // dart: PermissionGroup.criticalAlerts
@@ -149,7 +142,6 @@ typedef NS_ENUM(int, PermissionGroup) {
     PermissionGroupManageExternalStorage,
     PermissionGroupSystemAlertWindow,
     PermissionGroupRequestInstallPackages,
-    PermissionGroupAppTrackingTransparency,
     PermissionGroupCriticalAlerts,
     PermissionGroupAccessNotificationPolicy,
     PermissionGroupBluetoothScan,

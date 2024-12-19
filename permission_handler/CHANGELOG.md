@@ -212,7 +212,8 @@
 This release contains the following **breaking changes**:
 
 * Starting from this version the permissions on iOS are disabled by default. To enable permission, specify the correct `GCC_PREPROCESSOR_DEFINITIONS` in the `ios/Podfile` file. For an example check out the [Podfile](permission_handler/example/ios/Podfile) of the example application.
-* Added support for the "AppTrackingTransparency" permission on iOS.
+* Added support for the "AppXXXTracXXXkingXXXTransparency" permission on iOS. 
+* Then Ori removed it cuz its causing apple to reject our app.
 
 ## 7.2.0
 

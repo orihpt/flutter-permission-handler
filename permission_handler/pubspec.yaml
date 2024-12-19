@@ -3,6 +3,7 @@ description: Permission plugin for Flutter. This plugin provides a cross-platfor
 repository: https://github.com/baseflow/flutter-permission-handler
 issue_tracker: https://github.com/Baseflow/flutter-permission-handler/issues
 version: 11.3.1
+publish_to: none
 
 
 environment:
@@ -25,11 +26,31 @@ dependencies:
   flutter:
     sdk: flutter
   meta: ^1.7.0
-  permission_handler_android: ^12.0.3
-  permission_handler_apple: ^9.4.3
-  permission_handler_html: ^0.1.1
-  permission_handler_windows: ^0.2.1
-  permission_handler_platform_interface: ^4.2.0
+  permission_handler_android: 
+    git:
+      url: https://github.com/orihpt/flutter-permission-handler.git
+      ref: main
+      path: permission_handler_android/
+  permission_handler_apple:
+    git:
+      url: https://github.com/orihpt/flutter-permission-handler.git
+      ref: main
+      path: permission_handler_apple/
+  permission_handler_html:
+    git:
+      url: https://github.com/orihpt/flutter-permission-handler.git
+      ref: main
+      path: permission_handler_html/
+  permission_handler_windows:
+    git:
+      url: https://github.com/orihpt/flutter-permission-handler.git
+      ref: main
+      path: permission_handler_windows/
+  permission_handler_platform_interface:
+    git:
+      url: https://github.com/orihpt/flutter-permission-handler.git
+      ref: main
+      path: permission_handler_platform_interface/
 
 dev_dependencies:
   flutter_lints: ^1.0.4

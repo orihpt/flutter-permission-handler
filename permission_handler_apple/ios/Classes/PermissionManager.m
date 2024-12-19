@@ -145,8 +145,6 @@
             return [StoragePermissionStrategy new];
         case PermissionGroupBluetooth:
             return [BluetoothPermissionStrategy new];
-        case PermissionGroupAppTrackingTransparency:
-            return [AppTrackingTransparencyPermissionStrategy new];
         case PermissionGroupCriticalAlerts:
             return [CriticalAlertsPermissionStrategy new];
         case PermissionGroupAssistant:

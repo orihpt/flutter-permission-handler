@@ -47,7 +47,6 @@ final class PermissionConstants {
     static final int PERMISSION_GROUP_MANAGE_EXTERNAL_STORAGE = 22;
     static final int PERMISSION_GROUP_SYSTEM_ALERT_WINDOW = 23;
     static final int PERMISSION_GROUP_REQUEST_INSTALL_PACKAGES = 24;
-    static final int PERMISSION_GROUP_APP_TRACK_TRANSPARENCY = 25;
     static final int PERMISSION_GROUP_CRITICAL_ALERTS = 26;
     static final int PERMISSION_GROUP_ACCESS_NOTIFICATION_POLICY = 27;
     static final int PERMISSION_GROUP_BLUETOOTH_SCAN = 28;

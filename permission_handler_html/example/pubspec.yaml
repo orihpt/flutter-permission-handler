@@ -5,7 +5,11 @@ environment:
   sdk: ">=3.0.5 <4.0.0"
 
 dependencies:
-  permission_handler_platform_interface: ^4.2.0
+  permission_handler_platform_interface:
+    git:
+      url: https://github.com/orihpt/flutter-permission-handler.git
+      ref: main
+      path: permission_handler_platform_interface/
   baseflow_plugin_template: ^2.1.2
   flutter:
     sdk: flutter

@@ -121,9 +121,6 @@ You must list the permission you want to use in your application:
           ## dart: PermissionGroup.bluetooth
           'PERMISSION_BLUETOOTH=1',
 
-          ## dart: PermissionGroup.appTrackingTransparency
-          'PERMISSION_APP_TRACKING_TRANSPARENCY=1',
-
           ## dart: PermissionGroup.criticalAlerts
           'PERMISSION_CRITICAL_ALERTS=1',
 
